@@ -1,4 +1,3 @@
-.header on
 -- .open hw2.db
 SELECT C.name as name, F1.flight_num as f1_flight_num , F1.origin_city as f1_origin_city, 
     F1.dest_city as f1_dest_city, F1.actual_time as f1_actual_time, 

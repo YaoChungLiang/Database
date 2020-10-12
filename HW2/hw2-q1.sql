@@ -17,8 +17,6 @@ WHERE F.origin_city = 'Seattle WA' AND
 --     F.day_of_week_id = 1 AND
 --     F.carrier_id = 'AS';
 
-
-.header on
 SELECT DISTINCT F.flight_num as flight_num
 FROM FLIGHTS as F, WEEKDAYS as W, CARRIERS as C
 WHERE F.origin_city = 'Seattle WA' AND

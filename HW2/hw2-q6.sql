@@ -1,4 +1,3 @@
-.header on
 SELECT C.name, MAX(F.price) as max_price
 FROM FLIGHTS AS F, CARRIERS AS C
 WHERE ((F.origin_city = 'Seattle WA' AND F.dest_city = 'New York NY')
