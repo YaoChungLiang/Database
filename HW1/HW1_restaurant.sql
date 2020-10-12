@@ -12,6 +12,7 @@ INSERT INTO MyRestaurant VALUES('Ann House','Pepsea',1,'2020-10-04',1);
 INSERT INTO MyRestaurant VALUES('Chip fillet','Chips',100,'9999-12-31',null);
 INSERT INTO MyRestaurant VALUES('Stay awake','Red Bull',50,'0001-01-01',0);
 
+.nullvalue NULL
 .header on
 
 .mode csv
