@@ -1,0 +1,31 @@
+True False Questions:
+
+Q1_5:
+These two queries are equivalent:
+
+SELECT m.name, COUNT(*) AS num
+FROM Meet m, Event e
+GROUP BY m.id, m.name;
+
+SELECT m.name, COUNT(e.id) AS num
+FROM Meet m, Event e
+GROUP BY m.id, m.name;
+
+Answer : False
+
+
+Q2_1:
+SQL is a declarative language, meaning we declare what results we want rather than how to calculate them.  
+Answer : False 
+
+Q2_2:
+In SQL, a Primary Key must be only one attribute.  
+Answer : False  
+
+Q2_3:
+In SQL, each relation can have at most one foreign key reference to another table.  
+Answer : False  
+
+Q2_4:
+Some database systems may implement the SQL language differently, eg. throwing errors in some cases or not.
+Answer : True
