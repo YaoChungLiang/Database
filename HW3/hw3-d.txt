@@ -1,0 +1,21 @@
+I found that when I created a bigger table, it took lots of time to build. 
+I think it is because it needs to be distributed or copied to several servers so
+later on when I need to query on something, it can help speed up by seperated these tasks to several severs 
+if that query requires multiple servers to work together.
+
+Local machine works faster on easier queries while Azure is good at complicated queries. 
+The table of comparison attached below.
+
+      local   Azure
+q1      2       11
+q2      1        8
+q3      3       10
+q4      132     21
+q5      154     22
+q6      1        2
+q7      1        2
+# unit : second
+
+I think the idea of offering a DBMS in a public cloud is good that we can store data without redundancy 
+and we can modify them together so everyone could get real-time data but we also need to worry about what if someone
+accidentally delete something or make some unrecoverable actions.  
