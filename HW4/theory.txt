@@ -1,0 +1,24 @@
+Part 3
+
+(a)
+R(A,B,C,D,E)
+FD:
+    D -> B
+    CE -> A
+
+First, we use D->B to decompose R(A,B,C,D,E) into R1(B,D) and R2(A,C,D,E)
+since R2(A,C,D,E) violates CE -> A,
+So I decompose R2 into R21(A,C,E) and R22(C,D,E)
+Final relations : R1(_D_,B) and R21(A,_C_,_E_) and R22(C,E,D)
+
+
+(b)
+S(A,B,C,D,E)
+FD:
+    A->E
+    BC->A
+    DE->B
+First I use A -> E to decompose S(A,B,C,D,E) into S1(A,E) and S2(A,B,C,D)
+but S2(A,B,C,D) violates BC -> A,
+So I decompose S2(A,B,C,D) into S21(A,B,C) and S22(B,C,D)
+Final relations: S1(_A_,E), S21(A,_B_,_C_), S22(B,C,D)
