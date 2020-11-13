@@ -20,11 +20,11 @@ CREATE TABLE Driver(
 );
 
 CREATE TABLE Vehicle(
-    licensePlate VARCHAR(10),
+    licensePlate VARCHAR(10) PRIMARY KEY,
     year int,
     ssn int REFERENCES Person(ssn),
     name VARCHAR(10) REFERENCES InsuranceCo(name),
-    PRIMARY KEY(licensePlate, ssn, name)
+    -- PRIMARY KEY(licensePlate, ssn, name)
 );
 
 CREATE TABLE Insures(
@@ -57,7 +57,7 @@ CREATE TABLE ProfessionalDriver(
 CREATE TABLE Truck(
     LP VARCHAR(20) REFERENCES Vehicle(licensePlate),
     name VARCHAR(20) REFERENCES Vehicle(name),
-    ssn int REFERENCES Vehicle(ssn),
+    ssn int REFERENCES ProfessionalDriver(ssn),
     capacity int
     -- FOREIGN KEY(LP,name,ssn)
 );
