@@ -1,0 +1,164 @@
+﻿CSE 414 - Quiz 1 Solutions
+Q1.1 
+Write a CREATE TABLE statement for the Team table, including any foreign keys as necessary.
+CREATE TABLE Team(
+    id INT PRIMARY KEY,
+    name VARCHAR(200),
+    organization VARCHAR(200)
+);
+
+
+Q1.2 
+
+
+Write a CREATE TABLE statement for the Contestant table, including any foreign keys as necessary.
+
+
+CREATE TABLE Contestant(
+    id INT PRIMARY KEY,
+    tid INT REFERENCES Team(id),
+    name VARCHAR(200),
+    birthyear INT
+);
+
+
+
+
+Q1.3 
+
+
+Write a query to return the names of all contestants on the “Track” team for the “University of Washington” organization. Order them alphabetically ascending.
+
+
+SELECT C.name
+FROM Team T, Contestant C
+WHERE T.id = C.tid
+    AND T.Name = 'Track'
+    AND T.organization = 'University of Washington'
+ORDER BY C.name ASC;
+
+
+
+
+Q1.4
+
+
+Write a query to return the id and name of all events that had more than one winner (based on the won attribute).
+
+
+SELECT E.id, E.name
+FROM Event AS E, Performance AS P
+WHERE P.eid = E.id AND 
+   P.won = 1
+GROUP BY E.id, E.name
+HAVING COUNT(*) >= 2;
+
+
+
+
+Q1.5 
+
+
+True or False:
+These two queries are equivalent:
+
+
+SELECT m.name, COUNT(*) AS num
+FROM Meet m, Event e
+GROUP BY m.id, m.name;
+
+
+SELECT m.name, COUNT(e.id) AS num
+FROM Meet m, Event e
+GROUP BY m.id, m.name;
+
+
+Answer:
+True (for this instance with no NULL values. In the general case it is false so we gave full credit for both answers.)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Q1.6
+For each meet, find the event with the shortest completion time of the winner. In case of a tie (if multiple events had the same minimal completion time), return all of them. Return the meet name, meet year, event name, and completion time.
+(A subquery is not required, though you may use one if you wish.)
+
+
+
+
+Example without subquery:
+
+
+SELECT m.name, m.year, e1.name, p1.time
+FROM Meet m, Event e1, Performance p1, Event e2, Performance p2
+WHERE e1.mid = e2.mid AND
+      m.id = e1.mid AND
+      e1.id = p1.eid AND
+      p1.won = 1 AND
+      m.id = e2.mid AND
+      e2.id = p2.eid AND
+      p2.won = 1
+GROUP BY m.year, m.name, e1.name, e2.mid, p1.time
+HAVING p1.time = MIN(p2.time);
+
+
+Example with Subquery:
+
+
+WITH Mintimes AS
+   (SELECT m1.id, e1.name, MIN(p1.time) AS mintime
+        FROM Event e1, Performance p1, Meet m1
+        WHERE e1.id = p1.eid AND
+              m1.id = e1.mid
+        GROUP BY m1.id)
+SELECT m.name, m.year, e.name, mt.mintime
+FROM Event AS e, Meet AS m, Performance AS p, Mintimes AS mt
+WHERE m.id = mt.id AND
+      p.eid = e.id AND
+          p.time = mt.mintime;
+
+
+
+
+
+
+Q2.1
+SQL is a declarative language, meaning we declare what results we want rather than how to calculate them.
+True
+Q2.2
+In SQL, a Primary Key must be only one attribute.
+False
+
+
+Q 2.3
+In SQL, each relation can have at most one foreign key reference to another table.
+
+
+False
+
+
+
+
+
+
+Q 2.4
+Some database systems may implement the SQL language differently, eg. throwing errors in some cases or not.
+True
