@@ -1,1 +1,0 @@
-curl -v --data-urlencode "statement=`cat q1.sqlp`" --data pretty=true http://localhost:19002/query/service > output.txt
