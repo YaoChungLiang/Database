@@ -1,0 +1,1 @@
+sudo bash ~/packages/asterix-server-0.9.4.1-binary-assembly/opt/local/bin/start-sample-cluster.sh
