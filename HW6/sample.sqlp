@@ -1,3 +1,4 @@
-SELECT y.`-car_code` as code, y.name as name
+SELECT y.`-car_code` as code, y.`name` as name
 FROM geo.world x, x.mondial.country y
 ORDER BY y.name;
+

@@ -1,0 +1,2 @@
+SELECT y.name
+FROM geo.world x, x.modial.country as y;

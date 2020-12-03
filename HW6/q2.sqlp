@@ -1,0 +1,12 @@
+-- For each country return its name, its population, 
+-- and the number of religions sorted alphabetically by country. 
+-- Report 0 religions for countries without religions. 
+-- Name your output attributes country, population, num_religions. 
+-- [Result Size: 238 rows of {"num_religions":..., "country":..., "population":...} 
+-- (order of keys can differ)]
+
+SELECT STRICT_COUNT(u) as num_religions, y.name as country,   y.population as population
+FROM geo.world as x, x.mondial.country as y
+Let u  = CASE WHEN  y.religions IS MISSING THEN []
+WHEN IS_ARRAY(y.religions) THEN y.religions
+ELSE [y.religions]  end;

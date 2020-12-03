@@ -1,0 +1,1 @@
+SELECT x.mondial.country FROM geo.world x;

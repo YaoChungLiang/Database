@@ -1,0 +1,6 @@
+SELECT z.name as province_name, (select u.name from cities u) as cities
+FROM geo.world x, x.mondial.country y, y.province z
+LET cities = CASE  WHEN z.city is missing THEN []
+                   WHEN is_array(z.city) THEN z.city
+                   ELSE [z.city] END
+WHERE  y.name='Hungary';

@@ -1,1 +1,1 @@
-curl -v --data-urlencode "statement=`cat sample.sqlp`" --data pretty=true http://localhost:19002/query/service > output.txt
+curl -v --data-urlencode "statement=`cat $1.sqlp`" --data pretty=true http://localhost:19002/query/service > ./output/$2.txt

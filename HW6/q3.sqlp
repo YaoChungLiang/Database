@@ -1,0 +1,65 @@
+-- For each religion return the number of countries where it occurs; 
+-- order them in decreasing number of countries.
+-- Name your output attributes religion, num_countries. 
+-- [Result size: 37 of {"religion':..., "num_countries":...} 
+-- (order of keys can differ)]
+
+SELECT T.religion as religion, COUNT(T.country) as num_countries
+FROM (SELECT reli.`#text` as religion, y.name as country
+FROM geo.world as x, x.mondial.country as y,
+CASE WHEN y.religions is MISSING THEN []
+WHEN IS_ARRAY(y.religions) THEN y.religions
+ELSE [y.religions]
+END reli) AS T
+GROUP BY T.religion
+ORDER BY num_countries;
+
+-- done( but the columns are not what I ordered)
+
+SELECT T.religion, COUNT(T.country)
+FROM (SELECT reli.`#text` as religion, y.name as country
+FROM geo.world as x, x.mondial.country as y,
+CASE WHEN y.religions is MISSING THEN []
+WHEN IS_ARRAY(y.religions) THEN y.religions
+ELSE [y.religions]
+END reli) AS T
+GROUP BY T.religion;
+
+
+SELECT reli.`#text` as religion, y.name as country,   y.population as population
+FROM geo.world as x, x.mondial.country as y,
+CASE WHEN y.religions is MISSING THEN []
+WHEN IS_ARRAY(y.religions) THEN y.religions
+ELSE [y.religions]
+END reli;
+
+
+
+SELECT reli as religion, y.name as country,   y.population as population
+FROM geo.world as x, x.mondial.country as y
+Let reli = CASE WHEN is_array(y.religions) THEN y.religions
+ELSE [y.religions] END ;
+
+
+SELECT reli as religion, y.name as country,   y.population as population
+FROM geo.world as x, x.mondial.country as y, y.religions as reli
+Let reli = CASE WHEN is_array(y.religions) THEN y.religions
+ELSE [y.religions] END ;
+
+
+SELECT r.`#text` as religion, y.name as country,   y.population as population
+FROM geo.world as x, x.mondial.country as y,
+(CASE WHEN y.religions is MISSING THEN []
+WHEN IS_ARRAY(y.religions) THEN y.religions
+ELSE [y.religions]
+END) AS r
+GROUP BY r.`#text`;
+
+
+SELECT r.`#text` , y.name as country,   y.population as population
+FROM geo.world as x, x.mondial.country as y,
+(CASE WHEN y.religions is MISSING THEN []
+WHEN IS_ARRAY(y.religions) THEN y.religions
+ELSE [y.religions]
+END) AS r
+GROUP BY r.`#text`;
