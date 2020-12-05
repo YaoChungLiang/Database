@@ -14,4 +14,4 @@ END reli) AS T
 GROUP BY T.religion
 ORDER BY num_countries;
 
--- done( but the columns are not what I ordered)
+-- done

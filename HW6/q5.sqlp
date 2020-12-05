@@ -16,7 +16,7 @@ LET country_name = (SELECT VALUE c.name
 FROM geo.world as x, x.mondial.country as c
 WHERE c.`-car_code` = country_code);
 
--- done(possibly)
+-- done
 
 
 /*

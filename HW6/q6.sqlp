@@ -33,7 +33,7 @@ LET mountains = (SELECT I2.mountain, I1.height
 
 -- Possibly DONE with 271 rows.....
 
-/*
+/* test area
 SELECT DISTINCT I1.country_code, I1.country_name, mountains
 FROM 
 (SELECT  y.name as mountain, y.height as height, country_code, country_name

@@ -26,6 +26,7 @@ ORDER BY array_count(BorderSeas) DESC
 
 -- DONE with 74 rows
 
+/*
 WITH SeaTable as (
 SELECT sea.name, seaCountry
 FROM geo.world as x, x.mondial.sea as sea, split(sea.`-country`, ' ') as seaCountry)
@@ -83,3 +84,5 @@ FROM geo.world as x, x.mondial.sea as sea)
 SELECT *
 FROM SeaTable
 ;
+
+*/

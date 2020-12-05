@@ -1,4 +1,26 @@
-/*
+
+
+SELECT 
+DISTINCT c1.name as first_country, c2.name as second_country
+FROM 
+geo.world x, x.mondial.country c1, x.mondial.country c2,
+x.mondial.sea s, split(s.`-country`," ") S1, split(s.`-country`, " ") S2,
+x.mondial.mountain m, split(m.`-country`," ") M1, split(m.`-country`, " ") M2
+WHERE 
+M1 = c1.`-car_code` AND M2 = c2.`-car_code`
+AND S1 = c1.`-car_code` AND S2 = c2.`-car_code`
+AND c1.`-car_code` < c2.`-car_code`;
+
+
+/* 
+COMMENTS:
+This query takes 490 seconds to finish.
+*/
+
+
+
+
+/* MEMO
 For this query you should also measure and report the runtime;
  it may be approximate (warning: it might run for a while). 
  Find all distinct pairs of countries that share both a mountain and a sea. 
@@ -22,14 +44,3 @@ procedure:
 3. Double for loop to check 
 
 */
-
-SELECT 
-DISTINCT c1.name as first_country, c2.name as second_country
-FROM 
-geo.world x, x.mondial.country c1, x.mondial.country c2,
-x.mondial.sea s, split(s.`-country`," ") S1, split(s.`-country`, " ") S2,
-x.mondial.mountain m, split(m.`-country`," ") M1, split(m.`-country`, " ") M2
-WHERE 
-M1 = c1.`-car_code` AND M2 = c2.`-car_code`
-AND S1 = c1.`-car_code` AND S2 = c2.`-car_code`
-AND c1.`-car_code` < c2.`-car_code`;
