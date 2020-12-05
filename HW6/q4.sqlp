@@ -1,0 +1,47 @@
+-- For each ethnic group, return the number of countries where it occurs, 
+-- as well as the total population world-wide of that group. 
+-- Hint: you need to multiply the ethnicity’s percentage with the country’s population.
+-- Use the functions float(x) and/or int(x) to convert a string to a float or to an int.
+-- Name your output attributes ethnic_group, num_countries, total_population. 
+-- You can leave your final total_population as a float if you like. 
+-- [Result Size: 262 of {"ethnic_group":..., "num_countries":..., "total_population":...} 
+-- (order of keys can differ)]
+
+SELECT T.ethni as ethnic_group, COUNT(T.country) as num_countries,
+SUM(T.num) as total_population
+FROM(
+SELECT eth.`#text` as ethni, y.name as country, eth.`-percentage` as ethp, y.population as pop, int(y.population)/100*float(eth.`-percentage`) as num
+FROM geo.world as x, x.mondial.country as y,
+CASE WHEN y.ethnicgroups is MISSING THEN []
+WHEN IS_ARRAY(y.ethnicgroups) THEN y.ethnicgroups
+ELSE [y.ethnicgroups]
+END eth) AS T
+GROUP BY T.ethni;
+
+-- done
+
+/*
+SELECT eth.`#text` as ethni, y.name as country, eth.`-percentage` as ethp, y.population as pop, int(y.population)/100*float(eth.`-percentage`) as num
+FROM geo.world as x, x.mondial.country as y,
+CASE WHEN y.ethnicgroups is MISSING THEN []
+WHEN IS_ARRAY(y.ethnicgroups) THEN y.ethnicgroups
+ELSE [y.ethnicgroups]
+END eth;
+
+SELECT eth.`#text` as ethni, y.name as country, eth.`-percentage` as ethp, y.population as pop
+FROM geo.world as x, x.mondial.country as y,
+CASE WHEN y.ethnicgroups is MISSING THEN []
+WHEN IS_ARRAY(y.ethnicgroups) THEN y.ethnicgroups
+ELSE [y.ethnicgroups]
+END eth;
+
+
+SELECT T.ethni as ethnic_group
+FROM (SELECT eth.`#text` as ethni, y.name as country
+FROM geo.world as x, x.mondial.country as y,
+CASE WHEN y.ethnicgroups is MISSING THEN []
+WHEN IS_ARRAY(y.ethnicgroups) THEN y.ethnicgroups
+ELSE [y.ethnicgroups]
+END eth) AS T
+GROUP BY T.ethni;
+*/

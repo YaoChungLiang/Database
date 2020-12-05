@@ -1,0 +1,140 @@
+/*
+Modify the query from 11.
+ to return, for each pair of countries, 
+ the list of common mountains,
+ and the list of common seas. 
+ Name your output attributes first_country, second_country, mountains, seas.
+ [Result Size: 7 rows of {"mountains":[{"mountain":...}, ...], 
+                        "seas":[{"sea":...}, ...], 
+                        "first_country":..., "second_country":...}]
+*/
+WITH CountryPair as (
+SELECT 
+DISTINCT c1.name as first_country, c2.name as second_country, c1.`-car_code` as first_code, c2.`-car_code` as second_code
+FROM 
+geoindex.country c1, geoindex.country c2, 
+geoindex.sea as s, geoindex.mountain as m,
+split(s.`-country`," ") S1, split(s.`-country`, " ") S2,
+split(m.`-country`," ") M1, split(m.`-country`, " ") M2
+WHERE 
+    M1 = c1.`-car_code` AND M2 = c2.`-car_code`
+AND S1 = c1.`-car_code` AND S2 = c2.`-car_code`
+AND c1.`-car_code` < c2.`-car_code`)
+
+SELECT join_both.mountain_name as mountains, join_both.sea_name as seas, CP.first_country as first_country, CP.second_country as second_country
+FROM CountryPair CP, geoindex.sea s, geoindex.mountain m
+LET join_both = (
+                    SELECT m.name as mountain_name, s.name as sea_name
+                    FROM CountryPair CP, geoindex.sea s, geoindex.mountain m,split(s.`-country`," ")  S1, split(m.`-country`, " ") M1
+                    WHERE CP.first_code = S1 AND CP.second_code = M1
+)
+;
+
+-- failed
+
+
+WITH CountryPair as (
+SELECT 
+DISTINCT c1.name as first_country, c2.name as second_country, c1.`-car_code` as first_code, c2.`-car_code` as second_code
+FROM 
+geoindex.country c1, geoindex.country c2, 
+geoindex.sea as s, geoindex.mountain as m,
+split(s.`-country`," ") S1, split(s.`-country`, " ") S2,
+split(m.`-country`," ") M1, split(m.`-country`, " ") M2
+WHERE 
+    M1 = c1.`-car_code` AND M2 = c2.`-car_code`
+AND S1 = c1.`-car_code` AND S2 = c2.`-car_code`
+AND c1.`-car_code` < c2.`-car_code`)
+
+SELECT join_both.mountain_name as mountains, join_both.sea_name as seas, CP.first_country as first_country, CP.second_country as second_country
+FROM CountryPair CP, geoindex.sea s, geoindex.mountain m
+LET join_both = (
+                    SELECT m.name as mountain_name, s.name as sea_name
+                    FROM CountryPair CP, geoindex.sea s, geoindex.mountain m,split(s.`-country`," ")  S1, split(m.`-country`, " ") M1
+                    WHERE CP.first_code = S1 AND CP.second_code = M1
+)
+;
+
+---- failed
+
+
+
+WITH CountryPair as (
+SELECT 
+DISTINCT c1.name as first_country, c2.name as second_country, c1.`-car_code` as first_code, c2.`-car_code` as second_code
+FROM 
+geoindex.country c1, geoindex.country c2, 
+geoindex.sea as s, geoindex.mountain as m,
+split(s.`-country`," ") S1, split(s.`-country`, " ") S2,
+split(m.`-country`," ") M1, split(m.`-country`, " ") M2
+WHERE 
+    M1 = c1.`-car_code` AND M2 = c2.`-car_code`
+AND S1 = c1.`-car_code` AND S2 = c2.`-car_code`
+AND c1.`-car_code` < c2.`-car_code`)
+
+SELECT join_both.mountain_name as mountains, join_both.sea_name as seas, CP.first_country as first_country, CP.second_country as second_country
+FROM CountryPair CP, geoindex.sea s, geoindex.mountain m
+LET join_both = (
+                    SELECT m.name as mountain_name, s.name as sea_name
+                    FROM CountryPair CP, geoindex.sea s, geoindex.mountain m,split(s.`-country`," ")  S1, split(m.`-country`, " ") M1,
+                    CASE WHEN is_array(S1 ) THEN S1 ELSE [S1]
+                    CASE WHEN is_array(M1) THEN M1 ELSE [M1]
+                    WHERE CP.first_code in arr_s1 AND CP.second_code in arr_m1
+)
+;
+
+--
+
+WITH CountryPair as (
+SELECT 
+DISTINCT c1.name as first_country, c2.name as second_country, c1.`-car_code` as first_code, c2.`-car_code` as second_code
+FROM 
+geoindex.country c1, geoindex.country c2, 
+geoindex.sea as s, geoindex.mountain as m,
+split(s.`-country`," ") S1, split(s.`-country`, " ") S2,
+split(m.`-country`," ") M1, split(m.`-country`, " ") M2
+WHERE 
+    M1 = c1.`-car_code` AND M2 = c2.`-car_code`
+AND S1 = c1.`-car_code` AND S2 = c2.`-car_code`
+AND c1.`-car_code` < c2.`-car_code`)
+
+SELECT join_both.mountain_name as mountains, join_both.sea_name as seas, CP.first_country as first_country, CP.second_country as second_country
+FROM CountryPair CP, geoindex.sea s, geoindex.mountain m,
+split(s.`-country`," ") S1, split(m.`-country`, " ") M1,
+CASE WHEN is_array(S1) THEN S1
+    ELSE [s1]  AS arr_s1
+CASE WHEN is_array(M1) THEN M1
+    ELSE [M1] AS arr_m1
+LET join_both = (
+                    SELECT m.name as mountain_name, s.name as sea_name
+                    WHERE CP.first_code in arr_s1 AND CP.second_code in arr_m1
+)
+;
+
+-- test 1 fail
+
+WITH CountryPair as (
+SELECT 
+DISTINCT c1.name as first_country, c2.name as second_country, c1.`-car_code` as first_code, c2.`-car_code` as second_code
+FROM 
+geoindex.country c1, geoindex.country c2, 
+geoindex.sea as s, geoindex.mountain as m,
+split(s.`-country`," ") S1, split(s.`-country`, " ") S2,
+split(m.`-country`," ") M1, split(m.`-country`, " ") M2
+WHERE 
+    M1 = c1.`-car_code` AND M2 = c2.`-car_code`
+AND S1 = c1.`-car_code` AND S2 = c2.`-car_code`
+AND c1.`-car_code` < c2.`-car_code`)
+
+SELECT join_mountains as mountains, join_seas as seas, CP.first_country as first_country, CP.second_country as second_country
+FROM CountryPair CP, geoindex.sea s, geoindex.mountain m,
+split(s.`-country`," ") S1, split(m.`-country`, " ") M1
+LET join_mountains = (
+SELECT VALUE m.name
+WHERE CP.first_code in S1 AND CP.second_code in M1
+)
+LET join_seas = (
+SELECT VALUE s.name
+WHERE CP.first_code in S1 AND CP.second_code in M1
+)
+;

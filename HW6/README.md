@@ -18,3 +18,6 @@ After downloading all the reqirements.
 
 ## Tips
 1. After the start of an AsterixDB instance, you can enter the query interface by visiting (127.0.0.1:19001)[http://127.0.0.1:19001].
+
+## MEMO
+In mondial dataset, country is in 1 - 61023 lines

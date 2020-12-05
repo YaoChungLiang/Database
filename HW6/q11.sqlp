@@ -1,0 +1,18 @@
+Re-run the query from 9.
+(“pairs of countries that share both a mountain and a sea”) 
+on the new dataverse geoindex. 
+Turn in your altered query and report on the new runtime. 
+[Result Size: 7 rows of {"first_country":..., "second_country":...}]
+
+
+SELECT 
+DISTINCT c1.name as first_country, c2.name as second_country
+FROM 
+geoindex.country c1, geoindex.country c2, 
+geoindex.sea as s, geoindex.mountain as m,
+split(s.`-country`," ") S1, split(s.`-country`, " ") S2,
+split(m.`-country`," ") M1, split(m.`-country`, " ") M2
+WHERE 
+    M1 = c1.`-car_code` AND M2 = c2.`-car_code`
+AND S1 = c1.`-car_code` AND S2 = c2.`-car_code`
+AND c1.`-car_code` < c2.`-car_code`;

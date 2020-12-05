@@ -1,0 +1,85 @@
+/*
+Find all countries bordering two or more seas. 
+Here you need to join the "sea" collection with the "country" collection. 
+For each country in your list, return its code, its name,
+ and the list of bordering seas, in decreasing order of the number of seas.
+  Name your output attributes country_code, country_name, seas. 
+  The attribute seas should be a list of objects, each with the attribute sea.
+   [Result Size: 74 rows of {"country_code":..., "country_name":..., "seas": [{"sea":...}, {"sea":...}, ...]}
+    (order of keys can differ)]
+*/
+
+
+
+WITH SeaTable as (
+SELECT sea.name, seaCountry
+FROM geo.world as x, x.mondial.sea as sea, split(sea.`-country`, ' ') as seaCountry)
+SELECT cou.`-car_code` as country_code, cou.name as country_name, BorderSeas as seas
+FROM geo.world as x, x.mondial.country as cou
+LET BorderSeas = 
+(SELECT VALUE SeaTable.name
+FROM SeaTable
+WHERE SeaTable.seaCountry = cou.`-car_code`)
+WHERE array_count(BorderSeas) >= 2
+ORDER BY array_count(BorderSeas) DESC
+;
+
+-- DONE with 74 rows
+
+WITH SeaTable as (
+SELECT sea.name, seaCountry
+FROM geo.world as x, x.mondial.sea as sea, split(sea.`-country`, ' ') as seaCountry)
+SELECT cou.`-car_code`, cou.name, BorderSeas as seas
+FROM geo.world as x, x.mondial.country as cou
+LET BorderSeas = 
+(SELECT VALUE SeaTable.name
+FROM SeaTable
+WHERE SeaTable.seaCountry = cou.`-car_code`)
+WHERE ARRAY_COUNT(BorderSeas) > 0
+;
+
+
+
+WITH SeaTable as (
+SELECT sea.name, seaCountry
+FROM geo.world as x, x.mondial.sea as sea, split(sea.`-country`, ' ') as seaCountry)
+SELECT cou.`-car_code`, cou.name, BorderSeas as seas
+FROM geo.world as x, x.mondial.country as cou
+LET BorderSeas = 
+(SELECT VALUE SeaTable.name
+FROM SeaTable
+WHERE SeaTable.seaCountry = cou.`-car_code`)
+;
+
+
+WITH SeaTable as (
+SELECT sea.name, seaCountry
+FROM geo.world as x, x.mondial.sea as sea, split(sea.`-country`, ' ') as seaCountry)
+SELECT cou.`-car_code`, cou.name, BorderSeas as seas
+FROM geo.world as x, x.mondial.country as cou
+LET BorderSeas = 
+(SELECT VALUE SeaTable.name
+FROM SeaTable
+WHERE SeaTable.seaCountry = cou.`-car_code`)
+;
+
+
+SELECT sea.name, seaCountry
+FROM geo.world as x, x.mondial.sea as sea, split(sea.`-country`, ' ') as seaCountry;
+
+
+WITH SeaTable as(
+SELECT sea.name, split(sea.`-country`, ' ') as seaCountry
+FROM geo.world as x, x.mondial.sea as sea)
+SELECT st.seaCountry as sc, st.name as name
+FROM SeaTable AS st
+;
+
+
+
+WITH SeaTable as(
+SELECT sea.name, split(sea.`-country`, ' ') as seaCountry
+FROM geo.world as x, x.mondial.sea as sea)
+SELECT *
+FROM SeaTable
+;

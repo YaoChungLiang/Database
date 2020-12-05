@@ -1,0 +1,68 @@
+/*
+Compute a list of countries with all their mountains. 
+This is similar to the previous problem,
+ but now you will group the mountains for each country; 
+ return both the mountain name and its height. 
+ Your query should return a list where each element
+  consists of the country code, country name, and a list of mountain names and heights; 
+  order the countries by the number of mountains they contain, in descending order. 
+  Name your output attributes country_code, country_name, mountains. 
+  The attribute mountains should be a list of objects, 
+  each with the attributes mountain and height. 
+  [Result Size: 238 rows of 
+  {"country_code":..., 
+   "country_name":..., 
+   "mountains": [{"mountain":..., "height":...}, 
+   {"mountain":..., "height":...}, ...]} 
+   (order of keys can differ)]
+*/
+
+
+WITH Interpret AS
+(SELECT  y.name as mountain, y.height as height, country_code, country_name
+FROM geo.world as x, x.mondial.mountain as y,
+split(y.`-country`, ' ') as country_code
+LET country_name = (SELECT VALUE c.name
+FROM geo.world as x, x.mondial.country as c
+WHERE c.`-car_code` = country_code)) 
+SELECT DISTINCT I1.country_code, I1.country_name, mountains
+FROM Interpret as I1
+LET mountains = (SELECT I2.mountain, I1.height
+                FROM Interpret as I2
+                WHERE I1.country_code = I2.country_code AND I1.height = I2.height);  
+
+-- Possibly DONE with 271 rows.....
+
+/*
+SELECT DISTINCT I1.country_code, I1.country_name, mountains
+FROM 
+(SELECT  y.name as mountain, y.height as height, country_code, country_name
+FROM geo.world as x, x.mondial.mountain as y,
+split(y.`-country`, ' ') as country_code
+LET country_name = (SELECT VALUE c.name
+FROM geo.world as x, x.mondial.country as c
+WHERE c.`-car_code` = country_code) 
+) as I1
+LET mountains = (SELECT VALUE (I2.mountain, I2.height)
+                FROM (SELECT  y.name as mountain, y.height as height, country_code, country_name
+FROM geo.world as x, x.mondial.mountain as y,
+split(y.`-country`, ' ') as country_code
+LET country_name = (SELECT VALUE c.name
+FROM geo.world as x, x.mondial.country as c
+WHERE c.`-car_code` = country_code) ) as I2
+                WHERE I1.country_code = I2.country_code); 
+
+
+WITH Interpret AS
+(SELECT  y.name as mountain, y.height as height, country_code, country_name
+FROM geo.world as x, x.mondial.mountain as y,
+split(y.`-country`, ' ') as country_code
+LET country_name = (SELECT VALUE c.name
+FROM geo.world as x, x.mondial.country as c
+WHERE c.`-car_code` = country_code)) 
+SELECT DISTINCT I1.country_code, I1.country_name, mountains
+FROM Interpret as I1
+LET mountains = (SELECT VALUE I2.mountain
+                FROM Interpret as I2
+                WHERE I1.country_code = I2.country_code); 
+*/

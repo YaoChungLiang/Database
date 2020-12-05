@@ -1,0 +1,25 @@
+/*
+Return all landlocked countries.
+ A country is landlocked if it borders no sea. 
+ For each country in your list, return its code, its name, in decreasing order of the country's area. 
+ Note: this should be an easy query to derive from the previous one. 
+ Name your output attributes country_code, country_name, area. 
+ [Result Size: 45 rows of {"country_code":..., "country_name":..., "area":...}
+  (order of keys can differ)]
+*/
+
+
+WITH SeaTable as (
+SELECT sea.name, seaCountry
+FROM geo.world as x, x.mondial.sea as sea, split(sea.`-country`, ' ') as seaCountry)
+SELECT cou.`-car_code` as country_code, cou.name as country_name, cou.`-area` as area
+FROM geo.world as x, x.mondial.country as cou
+LET BorderSeas = 
+(SELECT VALUE SeaTable.name
+FROM SeaTable
+WHERE SeaTable.seaCountry = cou.`-car_code`)
+WHERE array_count(BorderSeas) < 1
+ORDER BY area DESC
+;
+
+-- DONE 45 rows

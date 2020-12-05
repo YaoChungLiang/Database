@@ -1,0 +1,54 @@
+-- Compute the list of all mountains, their heights, and the countries where they are located.
+-- Here you will join the "mountain" collection with the "country" collection,
+-- on the country code. You should return a list consisting of the mountain name, its height,
+-- the country code, and country name, in descending order of the height. Name your output attributes mountain,
+-- height, country_code, country_name.
+-- [Result Size: 272 rows of {"mountain":..., "height":..., "country_code":..., "country_name":...} 
+-- (order of keys can differ)]
+-- Hint: Some mountains can be located in more than one country. 
+-- You need to output them for each country they are located in.
+
+
+SELECT  y.name as mountain, y.height as height, country_code, country_name
+FROM geo.world as x, x.mondial.mountain as y,
+split(y.`-country`, ' ') as country_code
+LET country_name = (SELECT VALUE c.name
+FROM geo.world as x, x.mondial.country as c
+WHERE c.`-car_code` = country_code);
+
+-- done(possibly)
+
+
+/*
+SELECT  y.name as mountain, y.height as height, loc.`-country` as country_code, country_name
+FROM geo.world as x, x.mondial.mountain as y,
+CASE WHEN y.located is MISSING THEN []
+WHEN IS_ARRAY(y.located) THEN y.located
+ELSE [y.located]
+END loc
+LET country_name = (SELECT VALUE c.name
+FROM geo.world as x, x.mondial.country as c
+WHERE c.`-car_code` = loc.`-country`);
+
+
+SELECT  y.name as mountain, y.height as height, y.`-country` as country_code, country_name
+FROM geo.world as x, x.mondial.mountain as y
+LET country_name = (SELECT VALUE c.name
+FROM geo.world as x, x.mondial.country as c
+WHERE c.`-car_code` = y.`-country`);
+
+
+SELECT  y.name as mountain, y.height as height, loc.`-country` as country_name 
+FROM geo.world as x, x.mondial.mountain as y,
+CASE WHEN y.located is MISSING THEN []
+WHEN IS_ARRAY(y.located) THEN y.located
+ELSE [y.located]
+END loc;
+
+SELECT loc.`-country` as located_country,  y.name as mountain_name, y.height as height
+FROM geo.world as x, x.mondial.mountain as y,
+CASE WHEN y.located is MISSING THEN []
+WHEN IS_ARRAY(y.located) THEN y.located
+ELSE [y.located]
+END loc;
+*/
