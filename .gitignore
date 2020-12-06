@@ -1,0 +1,4 @@
+flight-dataset/
+*.db
+*.csv
+*.adm

@@ -1,0 +1,84 @@
+{
+	"requestID": "6d5ccc6d-56c5-4f18-a74e-564a2c9fd3f6",
+	"results": [ {
+		"province_name" : "Baranya"
+	}, {
+		"province_name" : "Bacs Kiskun",
+		"city_name" : "Kecskemet"
+	}, {
+		"province_name" : "Bekes",
+		"city_name" : "Bekescaba"
+	}, {
+		"province_name" : "Borsod Abauj Zemplen"
+	}, {
+		"province_name" : "Csongrad",
+		"city_name" : "Hodmezovasarhely"
+	}, {
+		"province_name" : "Fejer",
+		"city_name" : "Szekesfehervar"
+	}, {
+		"province_name" : "Gyor Sopron"
+	}, {
+		"province_name" : "Hajdu Bihar"
+	}, {
+		"province_name" : "Heves",
+		"city_name" : "Eger"
+	}, {
+		"province_name" : "Komarom Esztergom",
+		"city_name" : "Tatabanya"
+	}, {
+		"province_name" : "Nograd",
+		"city_name" : "Salgotarjan"
+	}, {
+		"province_name" : "Pest"
+	}, {
+		"province_name" : "Somogy",
+		"city_name" : "Kaposvar"
+	}, {
+		"province_name" : "Szabolcs Szatmar",
+		"city_name" : "Nyiregyhaza"
+	}, {
+		"province_name" : "Szolnok",
+		"city_name" : "Szolnok"
+	}, {
+		"province_name" : "Tolna",
+		"city_name" : "Szekszard"
+	}, {
+		"province_name" : "Vas",
+		"city_name" : "Szombathely"
+	}, {
+		"province_name" : "Veszprem",
+		"city_name" : "Veszprem"
+	}, {
+		"province_name" : "Zala",
+		"city_name" : "Zalaegerszeg"
+	}, {
+		"province_name" : "Budapest (munic.)",
+		"city_name" : "Budapest"
+	}, {
+		"province_name" : "Debrecen (munic.)",
+		"city_name" : "Debrecen"
+	}, {
+		"province_name" : "Gyor (munic.)",
+		"city_name" : "Gyor"
+	}, {
+		"province_name" : "Miskolc (munic.)",
+		"city_name" : "Miskolc"
+	}, {
+		"province_name" : "Pecs (munic.)",
+		"city_name" : "Pecs"
+	}, {
+		"province_name" : "Szeged (munic.)",
+		"city_name" : "Szeged"
+	} ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "127.8821ms",
+		"executionTime": "124.2242ms",
+		"resultCount": 25,
+		"resultSize": 1500,
+		"processedObjects": 1
+	}
+}

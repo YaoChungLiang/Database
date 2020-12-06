@@ -1,0 +1,12 @@
+{
+	"requestID": "2f6998c2-7d29-46d3-af3e-757179b360dd",
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "1.0408124s",
+		"executionTime": "1.0384806s",
+		"resultCount": 0,
+		"resultSize": 0,
+		"processedObjects": 0
+	}
+}

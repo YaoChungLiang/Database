@@ -1,0 +1,12 @@
+-- Retrieve the names of all cities located in Peru, sorted alphabetically. 
+-- Name your output attribute city. [Result Size: 30 rows of {"city":...}]
+
+SELECT u.name as city
+FROM geo.world as x, x.mondial.country as y, y.province as p,
+CASE WHEN is_array(p.city) THEN p.city
+ELSE [p.city] END u
+WHERE y.name = "Peru"
+ORDER BY u.name;
+
+-- done
+

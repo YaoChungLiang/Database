@@ -1,0 +1,2830 @@
+{
+	"requestID": "85659d04-561e-4747-996a-d943216b45d1",
+	"results": [ {
+		"country" : "Albania",
+		"religions" : [
+			{
+				"-percentage" : "70",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "10",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "20",
+				"#text" : "Christian Orthodox"
+			}
+		],
+		"population" : "3249136"
+	}, {
+		"country" : "Greece",
+		"religions" : [
+			{
+				"-percentage" : "1.3",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "98",
+				"#text" : "Christian Orthodox"
+			}
+		],
+		"population" : "10538594"
+	}, {
+		"country" : "Macedonia",
+		"religions" : [
+			{
+				"-percentage" : "30",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "67",
+				"#text" : "Christian Orthodox"
+			}
+		],
+		"population" : "2104035"
+	}, {
+		"country" : "Serbia",
+		"religions" : [
+			{
+				"-percentage" : "85",
+				"#text" : "Christian Orthodox"
+			},
+			{
+				"-percentage" : "3.2",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "5.5",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "1.1",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "7379339"
+	}, {
+		"country" : "Montenegro",
+		"religions" : [
+			{
+				"-percentage" : "74.2",
+				"#text" : "Christian Orthodox"
+			},
+			{
+				"-percentage" : "17.7",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "3.5",
+				"#text" : "Roman Catholic"
+			}
+		],
+		"population" : "672180"
+	}, {
+		"country" : "Kosovo",
+		"population" : "1804838"
+	}, {
+		"country" : "Andorra",
+		"religions" : {
+			"-percentage" : "100",
+			"#text" : "Roman Catholic"
+		},
+		"population" : "72766"
+	}, {
+		"country" : "France",
+		"religions" : [
+			{
+				"-percentage" : "1",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "1",
+				"#text" : "Jewish"
+			},
+			{
+				"-percentage" : "90",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "2",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "58317450"
+	}, {
+		"country" : "Spain",
+		"religions" : {
+			"-percentage" : "99",
+			"#text" : "Roman Catholic"
+		},
+		"population" : "39181114"
+	}, {
+		"country" : "Austria",
+		"religions" : [
+			{
+				"-percentage" : "85",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "6",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "8023244"
+	}, {
+		"country" : "Czech Republic",
+		"religions" : [
+			{
+				"-percentage" : "39.2",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "4.6",
+				"#text" : "Protestant"
+			},
+			{
+				"-percentage" : "3",
+				"#text" : "Christian Orthodox"
+			}
+		],
+		"population" : "10321120"
+	}, {
+		"country" : "Germany",
+		"religions" : [
+			{
+				"-percentage" : "37",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "45",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "83536115"
+	}, {
+		"country" : "Hungary",
+		"religions" : [
+			{
+				"-percentage" : "67.5",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "25",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "10002541"
+	}, {
+		"country" : "Italy",
+		"religions" : {
+			"-percentage" : "98",
+			"#text" : "Roman Catholic"
+		},
+		"population" : "57460274"
+	}, {
+		"country" : "Liechtenstein",
+		"religions" : [
+			{
+				"-percentage" : "87.3",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "8.3",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "31122"
+	}, {
+		"country" : "Slovakia",
+		"religions" : [
+			{
+				"-percentage" : "60.3",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "8.4",
+				"#text" : "Protestant"
+			},
+			{
+				"-percentage" : "4.1",
+				"#text" : "Christian Orthodox"
+			}
+		],
+		"population" : "5374362"
+	}, {
+		"country" : "Slovenia",
+		"religions" : [
+			{
+				"-percentage" : "1",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "96",
+				"#text" : "Roman Catholic"
+			}
+		],
+		"population" : "1951443"
+	}, {
+		"country" : "Switzerland",
+		"religions" : [
+			{
+				"-percentage" : "47.6",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "44.3",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "7207060"
+	}, {
+		"country" : "Belarus",
+		"religions" : {
+			"-percentage" : "60",
+			"#text" : "Christian Orthodox"
+		},
+		"population" : "10415973"
+	}, {
+		"country" : "Latvia",
+		"population" : "2468982"
+	}, {
+		"country" : "Lithuania",
+		"population" : "3646041"
+	}, {
+		"country" : "Poland",
+		"religions" : {
+			"-percentage" : "95",
+			"#text" : "Roman Catholic"
+		},
+		"population" : "38642565"
+	}, {
+		"country" : "Ukraine",
+		"population" : "50864009"
+	}, {
+		"country" : "Russia",
+		"population" : "148178487"
+	}, {
+		"country" : "Belgium",
+		"religions" : [
+			{
+				"-percentage" : "75",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "25",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "10170241"
+	}, {
+		"country" : "Luxembourg",
+		"religions" : [
+			{
+				"-percentage" : "97",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "3",
+				"#text" : "Jewish"
+			}
+		],
+		"population" : "415870"
+	}, {
+		"country" : "Netherlands",
+		"religions" : [
+			{
+				"-percentage" : "3",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "34",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "25",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "15568034"
+	}, {
+		"country" : "Bosnia and Herzegovina",
+		"religions" : [
+			{
+				"-percentage" : "40",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "4",
+				"#text" : "Protestant"
+			},
+			{
+				"-percentage" : "31",
+				"#text" : "Christian Orthodox"
+			},
+			{
+				"-percentage" : "15",
+				"#text" : "Roman Catholic"
+			}
+		],
+		"population" : "2656240"
+	}, {
+		"country" : "Croatia",
+		"religions" : [
+			{
+				"-percentage" : "0.4",
+				"#text" : "Protestant"
+			},
+			{
+				"-percentage" : "11.1",
+				"#text" : "Christian Orthodox"
+			},
+			{
+				"-percentage" : "76.5",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "1.2",
+				"#text" : "Muslim"
+			}
+		],
+		"population" : "5004112"
+	}, {
+		"country" : "Bulgaria",
+		"religions" : [
+			{
+				"-percentage" : "13",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "0.8",
+				"#text" : "Jewish"
+			},
+			{
+				"-percentage" : "0.7",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "85",
+				"#text" : "Christian Orthodox"
+			}
+		],
+		"population" : "8612757"
+	}, {
+		"country" : "Romania",
+		"religions" : [
+			{
+				"-percentage" : "6",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "6",
+				"#text" : "Protestant"
+			},
+			{
+				"-percentage" : "70",
+				"#text" : "Christian Orthodox"
+			}
+		],
+		"population" : "21657162"
+	}, {
+		"country" : "Turkey",
+		"religions" : {
+			"-percentage" : "99.8",
+			"#text" : "Muslim"
+		},
+		"population" : "62484478"
+	}, {
+		"country" : "Denmark",
+		"religions" : [
+			{
+				"-percentage" : "91",
+				"#text" : "Protestant"
+			},
+			{
+				"-percentage" : "2",
+				"#text" : "Roman Catholic"
+			}
+		],
+		"population" : "5249632"
+	}, {
+		"country" : "Estonia",
+		"population" : "1459428"
+	}, {
+		"country" : "Faroe Islands",
+		"religions" : {
+			"-percentage" : "100",
+			"#text" : "Protestant"
+		},
+		"population" : "43857"
+	}, {
+		"country" : "Finland",
+		"religions" : [
+			{
+				"-percentage" : "1",
+				"#text" : "Christian Orthodox"
+			},
+			{
+				"-percentage" : "89",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "5105230"
+	}, {
+		"country" : "Norway",
+		"religions" : [
+			{
+				"-percentage" : "87.8",
+				"#text" : "Protestant"
+			},
+			{
+				"-percentage" : "1",
+				"#text" : "Roman Catholic"
+			}
+		],
+		"population" : "4383807"
+	}, {
+		"country" : "Sweden",
+		"religions" : [
+			{
+				"-percentage" : "1.5",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "94",
+				"#text" : "Protestant"
+			},
+			{
+				"-percentage" : "1",
+				"#text" : "Pentecostal"
+			}
+		],
+		"population" : "8900954"
+	}, {
+		"country" : "Monaco",
+		"religions" : {
+			"-percentage" : "95",
+			"#text" : "Roman Catholic"
+		},
+		"population" : "31719"
+	}, {
+		"country" : "Gibraltar",
+		"religions" : [
+			{
+				"-percentage" : "8",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "2",
+				"#text" : "Jewish"
+			},
+			{
+				"-percentage" : "74",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "11",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "28765"
+	}, {
+		"country" : "Guernsey",
+		"population" : "62920"
+	}, {
+		"country" : "Holy See",
+		"religions" : {
+			"-percentage" : "100",
+			"#text" : "Roman Catholic"
+		},
+		"population" : "840"
+	}, {
+		"country" : "Iceland",
+		"religions" : [
+			{
+				"-percentage" : "96",
+				"#text" : "Protestant"
+			},
+			{
+				"-percentage" : "3",
+				"#text" : "Roman Catholic"
+			}
+		],
+		"population" : "270292"
+	}, {
+		"country" : "Ireland",
+		"religions" : [
+			{
+				"-percentage" : "93",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "3",
+				"#text" : "Anglican"
+			}
+		],
+		"population" : "3566833"
+	}, {
+		"country" : "San Marino",
+		"religions" : {
+			"-percentage" : "100",
+			"#text" : "Roman Catholic"
+		},
+		"population" : "24521"
+	}, {
+		"country" : "Jersey",
+		"population" : "87848"
+	}, {
+		"country" : "Malta",
+		"religions" : {
+			"-percentage" : "98",
+			"#text" : "Roman Catholic"
+		},
+		"population" : "375576"
+	}, {
+		"country" : "Man",
+		"population" : "73837"
+	}, {
+		"country" : "Moldova",
+		"religions" : [
+			{
+				"-percentage" : "1.5",
+				"#text" : "Jewish"
+			},
+			{
+				"-percentage" : "98.5",
+				"#text" : "Christian Orthodox"
+			}
+		],
+		"population" : "4463847"
+	}, {
+		"country" : "Portugal",
+		"religions" : [
+			{
+				"-percentage" : "97",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "1",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "9865114"
+	}, {
+		"country" : "Svalbard",
+		"population" : "2116"
+	}, {
+		"country" : "United Kingdom",
+		"population" : "58489975"
+	}, {
+		"country" : "Afghanistan",
+		"religions" : {
+			"-percentage" : "99",
+			"#text" : "Muslim"
+		},
+		"population" : "22664136"
+	}, {
+		"country" : "China",
+		"religions" : [
+			{
+				"-percentage" : "2",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "1",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "1210004956"
+	}, {
+		"country" : "Iran",
+		"religions" : [
+			{
+				"-percentage" : "99",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "1",
+				"#text" : "Bahai"
+			}
+		],
+		"population" : "66094264"
+	}, {
+		"country" : "Pakistan",
+		"religions" : {
+			"-percentage" : "97",
+			"#text" : "Muslim"
+		},
+		"population" : "129275660"
+	}, {
+		"country" : "Tajikistan",
+		"religions" : {
+			"-percentage" : "85",
+			"#text" : "Muslim"
+		},
+		"population" : "5916373"
+	}, {
+		"country" : "Turkmenistan",
+		"religions" : [
+			{
+				"-percentage" : "87",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "11",
+				"#text" : "Christian Orthodox"
+			}
+		],
+		"population" : "4149283"
+	}, {
+		"country" : "Uzbekistan",
+		"religions" : [
+			{
+				"-percentage" : "88",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "9",
+				"#text" : "Christian Orthodox"
+			}
+		],
+		"population" : "23418381"
+	}, {
+		"country" : "Armenia",
+		"religions" : {
+			"-percentage" : "94",
+			"#text" : "Christian Orthodox"
+		},
+		"population" : "3463574"
+	}, {
+		"country" : "Georgia",
+		"religions" : [
+			{
+				"-percentage" : "11",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "8",
+				"#text" : "Armenian Apostolic"
+			},
+			{
+				"-percentage" : "75",
+				"#text" : "Christian Orthodox"
+			}
+		],
+		"population" : "5219810"
+	}, {
+		"country" : "Azerbaijan",
+		"religions" : [
+			{
+				"-percentage" : "93.4",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "4.8",
+				"#text" : "Christian Orthodox"
+			}
+		],
+		"population" : "7676953"
+	}, {
+		"country" : "Bahrain",
+		"religions" : {
+			"-percentage" : "100",
+			"#text" : "Muslim"
+		},
+		"population" : "590042"
+	}, {
+		"country" : "Bangladesh",
+		"religions" : [
+			{
+				"-percentage" : "83",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "16",
+				"#text" : "Hindu"
+			}
+		],
+		"population" : "123062800"
+	}, {
+		"country" : "Myanmar",
+		"religions" : [
+			{
+				"-percentage" : "4",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "4",
+				"#text" : "Christian"
+			},
+			{
+				"-percentage" : "89",
+				"#text" : "Buddhist"
+			}
+		],
+		"population" : "45975625"
+	}, {
+		"country" : "India",
+		"religions" : [
+			{
+				"-percentage" : "14",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "2.4",
+				"#text" : "Christian"
+			},
+			{
+				"-percentage" : "0.7",
+				"#text" : "Buddhist"
+			},
+			{
+				"-percentage" : "80",
+				"#text" : "Hindu"
+			},
+			{
+				"-percentage" : "2",
+				"#text" : "Sikh"
+			},
+			{
+				"-percentage" : "0.5",
+				"#text" : "Jains"
+			}
+		],
+		"population" : "952107694"
+	}, {
+		"country" : "Bhutan",
+		"religions" : [
+			{
+				"-percentage" : "75",
+				"#text" : "Buddhist"
+			},
+			{
+				"-percentage" : "25",
+				"#text" : "Hindu"
+			}
+		],
+		"population" : "1822625"
+	}, {
+		"country" : "Brunei",
+		"religions" : [
+			{
+				"-percentage" : "63",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "8",
+				"#text" : "Christian"
+			},
+			{
+				"-percentage" : "14",
+				"#text" : "Buddhist"
+			}
+		],
+		"population" : "299939"
+	}, {
+		"country" : "Malaysia",
+		"population" : "19962893"
+	}, {
+		"country" : "Laos",
+		"religions" : {
+			"-percentage" : "60",
+			"#text" : "Buddhist"
+		},
+		"population" : "4975772"
+	}, {
+		"country" : "Thailand",
+		"religions" : [
+			{
+				"-percentage" : "3.8",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "95",
+				"#text" : "Buddhist"
+			},
+			{
+				"-percentage" : "0.5",
+				"#text" : "Christian"
+			},
+			{
+				"-percentage" : "0.1",
+				"#text" : "Hindu"
+			}
+		],
+		"population" : "58851357"
+	}, {
+		"country" : "Cambodia",
+		"religions" : {
+			"-percentage" : "95",
+			"#text" : "Buddhist"
+		},
+		"population" : "10861218"
+	}, {
+		"country" : "Vietnam",
+		"population" : "73976973"
+	}, {
+		"country" : "Kazakstan",
+		"religions" : [
+			{
+				"-percentage" : "47",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "2",
+				"#text" : "Protestant"
+			},
+			{
+				"-percentage" : "44",
+				"#text" : "Christian Orthodox"
+			}
+		],
+		"population" : "16916463"
+	}, {
+		"country" : "North Korea",
+		"population" : "23904124"
+	}, {
+		"country" : "Kyrgyzstan",
+		"population" : "4529648"
+	}, {
+		"country" : "Hong Kong",
+		"religions" : {
+			"-percentage" : "10",
+			"#text" : "Christian"
+		},
+		"population" : "7055071"
+	}, {
+		"country" : "Macau",
+		"religions" : [
+			{
+				"-percentage" : "7",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "1",
+				"#text" : "Protestant"
+			},
+			{
+				"-percentage" : "45",
+				"#text" : "Buddhist"
+			}
+		],
+		"population" : "496837"
+	}, {
+		"country" : "Mongolia",
+		"religions" : {
+			"-percentage" : "4",
+			"#text" : "Muslim"
+		},
+		"population" : "2496617"
+	}, {
+		"country" : "Nepal",
+		"religions" : [
+			{
+				"-percentage" : "3",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "5",
+				"#text" : "Buddhist"
+			},
+			{
+				"-percentage" : "90",
+				"#text" : "Hindu"
+			}
+		],
+		"population" : "22094033"
+	}, {
+		"country" : "Christmas Island",
+		"religions" : [
+			{
+				"-percentage" : "25",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "18",
+				"#text" : "Christian"
+			},
+			{
+				"-percentage" : "36",
+				"#text" : "Buddhist"
+			}
+		],
+		"population" : "1402"
+	}, {
+		"country" : "Cocos Islands",
+		"religions" : [
+			{
+				"-percentage" : "80",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "20",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "596"
+	}, {
+		"country" : "Cyprus",
+		"religions" : [
+			{
+				"-percentage" : "18",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "78",
+				"#text" : "Christian Orthodox"
+			}
+		],
+		"population" : "744609"
+	}, {
+		"country" : "Gaza Strip",
+		"religions" : [
+			{
+				"-percentage" : "98.7",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "0.6",
+				"#text" : "Jewish"
+			},
+			{
+				"-percentage" : "0.7",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "813332"
+	}, {
+		"country" : "Israel",
+		"religions" : [
+			{
+				"-percentage" : "2",
+				"#text" : "Christian"
+			},
+			{
+				"-percentage" : "14",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "2",
+				"#text" : "Druze"
+			},
+			{
+				"-percentage" : "82",
+				"#text" : "Judaism"
+			}
+		],
+		"population" : "5421995"
+	}, {
+		"country" : "Egypt",
+		"religions" : [
+			{
+				"-percentage" : "94",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "6",
+				"#text" : "Coptic Christian"
+			}
+		],
+		"population" : "63575107"
+	}, {
+		"country" : "Indonesia",
+		"religions" : [
+			{
+				"-percentage" : "87",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "3",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "6",
+				"#text" : "Protestant"
+			},
+			{
+				"-percentage" : "1",
+				"#text" : "Buddhist"
+			},
+			{
+				"-percentage" : "2",
+				"#text" : "Hindu"
+			}
+		],
+		"population" : "206611600"
+	}, {
+		"country" : "Timor-Leste",
+		"religions" : [
+			{
+				"-percentage" : "1",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "1",
+				"#text" : "Protestant"
+			},
+			{
+				"-percentage" : "98",
+				"#text" : "Roman Catholic"
+			}
+		],
+		"population" : "1131612"
+	}, {
+		"country" : "Papua New Guinea",
+		"religions" : [
+			{
+				"-percentage" : "22",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "26",
+				"#text" : "Protestant"
+			},
+			{
+				"-percentage" : "5",
+				"#text" : "Anglican"
+			},
+			{
+				"-percentage" : "1",
+				"#text" : "Seventh-Day Adventist"
+			},
+			{
+				"-percentage" : "8",
+				"#text" : "Presbyterian"
+			},
+			{
+				"-percentage" : "4",
+				"#text" : "Evangelical Alliance"
+			}
+		],
+		"population" : "4394537"
+	}, {
+		"country" : "Iraq",
+		"religions" : [
+			{
+				"-percentage" : "97",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "3",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "21422292"
+	}, {
+		"country" : "Jordan",
+		"religions" : [
+			{
+				"-percentage" : "92",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "8",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "4212152"
+	}, {
+		"country" : "Kuwait",
+		"religions" : {
+			"-percentage" : "85",
+			"#text" : "Muslim"
+		},
+		"population" : "1950047"
+	}, {
+		"country" : "Saudi Arabia",
+		"religions" : {
+			"-percentage" : "100",
+			"#text" : "Muslim"
+		},
+		"population" : "19409058"
+	}, {
+		"country" : "Syria",
+		"religions" : [
+			{
+				"-percentage" : "90",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "10",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "15608648"
+	}, {
+		"country" : "Lebanon",
+		"religions" : [
+			{
+				"-percentage" : "30",
+				"#text" : "Christian"
+			},
+			{
+				"-percentage" : "70",
+				"#text" : "Muslim"
+			}
+		],
+		"population" : "3776317"
+	}, {
+		"country" : "West Bank",
+		"religions" : [
+			{
+				"-percentage" : "75",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "17",
+				"#text" : "Jewish"
+			},
+			{
+				"-percentage" : "8",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "1427741"
+	}, {
+		"country" : "Japan",
+		"religions" : {
+			"-percentage" : "84",
+			"#text" : "Buddhist"
+		},
+		"population" : "125449703"
+	}, {
+		"country" : "South Korea",
+		"religions" : [
+			{
+				"-percentage" : "47.4",
+				"#text" : "Buddhist"
+			},
+			{
+				"-percentage" : "48.6",
+				"#text" : "Christian"
+			},
+			{
+				"-percentage" : "3",
+				"#text" : "Confucianism"
+			},
+			{
+				"-percentage" : "0.2",
+				"#text" : "Chondogyo"
+			}
+		],
+		"population" : "45482291"
+	}, {
+		"country" : "Maldives",
+		"religions" : {
+			"-percentage" : "100",
+			"#text" : "Muslim"
+		},
+		"population" : "270758"
+	}, {
+		"country" : "Oman",
+		"religions" : {
+			"-percentage" : "75",
+			"#text" : "Muslim"
+		},
+		"population" : "2186548"
+	}, {
+		"country" : "United Arab Emirates",
+		"religions" : {
+			"-percentage" : "96",
+			"#text" : "Muslim"
+		},
+		"population" : "3057337"
+	}, {
+		"country" : "Yemen",
+		"population" : "13483178"
+	}, {
+		"country" : "Philippines",
+		"religions" : [
+			{
+				"-percentage" : "5",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "83",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "9",
+				"#text" : "Protestant"
+			},
+			{
+				"-percentage" : "3",
+				"#text" : "Buddhist"
+			}
+		],
+		"population" : "74480848"
+	}, {
+		"country" : "Qatar",
+		"religions" : {
+			"-percentage" : "95",
+			"#text" : "Muslim"
+		},
+		"population" : "547761"
+	}, {
+		"country" : "Singapore",
+		"population" : "3396924"
+	}, {
+		"country" : "Sri Lanka",
+		"religions" : [
+			{
+				"-percentage" : "8",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "8",
+				"#text" : "Christian"
+			},
+			{
+				"-percentage" : "69",
+				"#text" : "Buddhist"
+			},
+			{
+				"-percentage" : "15",
+				"#text" : "Hindu"
+			}
+		],
+		"population" : "18553074"
+	}, {
+		"country" : "Taiwan",
+		"religions" : [
+			{
+				"-percentage" : "4.5",
+				"#text" : "Christian"
+			},
+			{
+				"-percentage" : "93",
+				"#text" : "Taoist"
+			}
+		],
+		"population" : "21465881"
+	}, {
+		"country" : "Anguilla",
+		"religions" : [
+			{
+				"-percentage" : "5.7",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "30.2",
+				"#text" : "Protestant"
+			},
+			{
+				"-percentage" : "29",
+				"#text" : "Anglican"
+			},
+			{
+				"-percentage" : "23.9",
+				"#text" : "Methodist"
+			}
+		],
+		"population" : "14436"
+	}, {
+		"country" : "Antigua and Barbuda",
+		"population" : "65647"
+	}, {
+		"country" : "Aruba",
+		"religions" : [
+			{
+				"-percentage" : "80.8",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "9",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "103065"
+	}, {
+		"country" : "Bahamas",
+		"religions" : [
+			{
+				"-percentage" : "19",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "12",
+				"#text" : "Protestant"
+			},
+			{
+				"-percentage" : "20",
+				"#text" : "Anglican"
+			},
+			{
+				"-percentage" : "32",
+				"#text" : "Baptist"
+			},
+			{
+				"-percentage" : "6",
+				"#text" : "Methodist"
+			},
+			{
+				"-percentage" : "6",
+				"#text" : "Church of God"
+			}
+		],
+		"population" : "259367"
+	}, {
+		"country" : "Barbados",
+		"religions" : [
+			{
+				"-percentage" : "4",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "67",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "257030"
+	}, {
+		"country" : "Belize",
+		"religions" : [
+			{
+				"-percentage" : "62",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "30",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "219296"
+	}, {
+		"country" : "Guatemala",
+		"population" : "11277614"
+	}, {
+		"country" : "Mexico",
+		"religions" : [
+			{
+				"-percentage" : "89",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "6",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "95772462"
+	}, {
+		"country" : "Bermuda",
+		"religions" : [
+			{
+				"-percentage" : "15",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "23",
+				"#text" : "Anglican"
+			},
+			{
+				"-percentage" : "5",
+				"#text" : "Seventh-Day Adventist"
+			},
+			{
+				"-percentage" : "18",
+				"#text" : "Protestant"
+			},
+			{
+				"-percentage" : "11",
+				"#text" : "African Methodist Episcopal"
+			}
+		],
+		"population" : "67837"
+	}, {
+		"country" : "British Virgin Islands",
+		"religions" : [
+			{
+				"-percentage" : "10",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "86",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "24491"
+	}, {
+		"country" : "Canada",
+		"religions" : [
+			{
+				"-percentage" : "45",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "8",
+				"#text" : "Anglican"
+			},
+			{
+				"-percentage" : "12",
+				"#text" : "United Church"
+			}
+		],
+		"population" : "28820671"
+	}, {
+		"country" : "United States",
+		"religions" : [
+			{
+				"-percentage" : "2",
+				"#text" : "Jewish"
+			},
+			{
+				"-percentage" : "28",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "56",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "266476278"
+	}, {
+		"country" : "Cayman Islands",
+		"religions" : [
+			{
+				"-percentage" : "11",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "5.7",
+				"#text" : "Anglican"
+			},
+			{
+				"-percentage" : "26",
+				"#text" : "Church of God"
+			},
+			{
+				"-percentage" : "11.8",
+				"#text" : "United Church"
+			}
+		],
+		"population" : "49035"
+	}, {
+		"country" : "Costa Rica",
+		"religions" : {
+			"-percentage" : "95",
+			"#text" : "Roman Catholic"
+		},
+		"population" : "3463083"
+	}, {
+		"country" : "Nicaragua",
+		"religions" : [
+			{
+				"-percentage" : "95",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "5",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "4272352"
+	}, {
+		"country" : "Panama",
+		"religions" : [
+			{
+				"-percentage" : "85",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "15",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "2655094"
+	}, {
+		"country" : "Cuba",
+		"religions" : {
+			"-percentage" : "85",
+			"#text" : "Roman Catholic"
+		},
+		"population" : "10951334"
+	}, {
+		"country" : "Dominica",
+		"religions" : [
+			{
+				"-percentage" : "77",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "15",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "82926"
+	}, {
+		"country" : "Dominican Republic",
+		"religions" : {
+			"-percentage" : "95",
+			"#text" : "Roman Catholic"
+		},
+		"population" : "8088881"
+	}, {
+		"country" : "Haiti",
+		"religions" : [
+			{
+				"-percentage" : "80",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "16",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "6731539"
+	}, {
+		"country" : "El Salvador",
+		"religions" : {
+			"-percentage" : "75",
+			"#text" : "Roman Catholic"
+		},
+		"population" : "5828987"
+	}, {
+		"country" : "Honduras",
+		"religions" : {
+			"-percentage" : "97",
+			"#text" : "Roman Catholic"
+		},
+		"population" : "5605193"
+	}, {
+		"country" : "Greenland",
+		"religions" : {
+			"-percentage" : "100",
+			"#text" : "Protestant"
+		},
+		"population" : "58203"
+	}, {
+		"country" : "Grenada",
+		"population" : "94961"
+	}, {
+		"country" : "Guadeloupe",
+		"religions" : [
+			{
+				"-percentage" : "95",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "1",
+				"#text" : "Protestant"
+			},
+			{
+				"-percentage" : "4",
+				"#text" : "Hindu"
+			}
+		],
+		"population" : "407768"
+	}, {
+		"country" : "Jamaica",
+		"religions" : [
+			{
+				"-percentage" : "5",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "55.9",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "2595275"
+	}, {
+		"country" : "Martinique",
+		"religions" : [
+			{
+				"-percentage" : "95",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "5",
+				"#text" : "Hindu"
+			}
+		],
+		"population" : "399151"
+	}, {
+		"country" : "Montserrat",
+		"population" : "5097"
+	}, {
+		"country" : "Netherlands Antilles",
+		"population" : "227049"
+	}, {
+		"country" : "Saint Martin",
+		"population" : "29820"
+	}, {
+		"country" : "Colombia",
+		"religions" : {
+			"-percentage" : "95",
+			"#text" : "Roman Catholic"
+		},
+		"population" : "36813161"
+	}, {
+		"country" : "Puerto Rico",
+		"religions" : [
+			{
+				"-percentage" : "85",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "15",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "3971020"
+	}, {
+		"country" : "Saint Kitts and Nevis",
+		"population" : "41369"
+	}, {
+		"country" : "Saint Lucia",
+		"religions" : [
+			{
+				"-percentage" : "90",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "7",
+				"#text" : "Protestant"
+			},
+			{
+				"-percentage" : "3",
+				"#text" : "Anglican"
+			}
+		],
+		"population" : "157862"
+	}, {
+		"country" : "Saint Pierre and Miquelon",
+		"religions" : {
+			"-percentage" : "99",
+			"#text" : "Roman Catholic"
+		},
+		"population" : "6809"
+	}, {
+		"country" : "Saint Vincent and the Grenadines",
+		"population" : "118344"
+	}, {
+		"country" : "Trinidad and Tobago",
+		"religions" : [
+			{
+				"-percentage" : "6",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "32.2",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "14",
+				"#text" : "Protestant"
+			},
+			{
+				"-percentage" : "14.4",
+				"#text" : "Anglican"
+			},
+			{
+				"-percentage" : "24.3",
+				"#text" : "Hindu"
+			}
+		],
+		"population" : "1272385"
+	}, {
+		"country" : "Turks and Caicos Islands",
+		"religions" : [
+			{
+				"-percentage" : "18",
+				"#text" : "Anglican"
+			},
+			{
+				"-percentage" : "40",
+				"#text" : "Baptist"
+			},
+			{
+				"-percentage" : "12",
+				"#text" : "Church of God"
+			},
+			{
+				"-percentage" : "16",
+				"#text" : "Methodist"
+			}
+		],
+		"population" : "22942"
+	}, {
+		"country" : "Virgin Islands",
+		"religions" : [
+			{
+				"-percentage" : "34",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "42",
+				"#text" : "Baptist"
+			},
+			{
+				"-percentage" : "17",
+				"#text" : "Episcopalian"
+			}
+		],
+		"population" : "97120"
+	}, {
+		"country" : "American Samoa",
+		"religions" : [
+			{
+				"-percentage" : "20",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "30",
+				"#text" : "Protestant"
+			},
+			{
+				"-percentage" : "50",
+				"#text" : "Christian Congregationalist"
+			}
+		],
+		"population" : "65628"
+	}, {
+		"country" : "Australia",
+		"religions" : [
+			{
+				"-percentage" : "26",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "26.1",
+				"#text" : "Anglican"
+			},
+			{
+				"-percentage" : "24.3",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "18260863"
+	}, {
+		"country" : "Cook Islands",
+		"religions" : {
+			"-percentage" : "100",
+			"#text" : "Christian"
+		},
+		"population" : "11870"
+	}, {
+		"country" : "Fiji",
+		"religions" : [
+			{
+				"-percentage" : "8",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "52",
+				"#text" : "Christian"
+			},
+			{
+				"-percentage" : "38",
+				"#text" : "Hindu"
+			}
+		],
+		"population" : "782381"
+	}, {
+		"country" : "French Polynesia",
+		"religions" : [
+			{
+				"-percentage" : "30",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "54",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "287032"
+	}, {
+		"country" : "Guam",
+		"religions" : {
+			"-percentage" : "95",
+			"#text" : "Roman Catholic"
+		},
+		"population" : "178430"
+	}, {
+		"country" : "Kiribati",
+		"religions" : [
+			{
+				"-percentage" : "52.6",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "40.9",
+				"#text" : "Protestant"
+			},
+			{
+				"-percentage" : "6",
+				"#text" : "Mormon"
+			}
+		],
+		"population" : "80919"
+	}, {
+		"country" : "Marshall Islands",
+		"religions" : {
+			"-percentage" : "100",
+			"#text" : "Christian"
+		},
+		"population" : "58363"
+	}, {
+		"country" : "Micronesia",
+		"religions" : [
+			{
+				"-percentage" : "50",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "47",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "125377"
+	}, {
+		"country" : "Nauru",
+		"religions" : {
+			"-percentage" : "100",
+			"#text" : "Christian"
+		},
+		"population" : "10273"
+	}, {
+		"country" : "New Caledonia",
+		"religions" : [
+			{
+				"-percentage" : "60",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "30",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "227436"
+	}, {
+		"country" : "New Zealand",
+		"religions" : [
+			{
+				"-percentage" : "15",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "3",
+				"#text" : "Protestant"
+			},
+			{
+				"-percentage" : "24",
+				"#text" : "Anglican"
+			},
+			{
+				"-percentage" : "2",
+				"#text" : "Baptist"
+			},
+			{
+				"-percentage" : "5",
+				"#text" : "Methodist"
+			},
+			{
+				"-percentage" : "18",
+				"#text" : "Presbyterian"
+			}
+		],
+		"population" : "3547983"
+	}, {
+		"country" : "Niue",
+		"religions" : [
+			{
+				"-percentage" : "10",
+				"#text" : "Mormon"
+			},
+			{
+				"-percentage" : "61",
+				"#text" : "Ekalesia Niue"
+			},
+			{
+				"-percentage" : "7.2",
+				"#text" : "Roman Catholic"
+			}
+		],
+		"population" : "1398"
+	}, {
+		"country" : "Norfolk Island",
+		"religions" : [
+			{
+				"-percentage" : "11.7",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "39",
+				"#text" : "Anglican"
+			},
+			{
+				"-percentage" : "4.4",
+				"#text" : "Seventh-Day Adventist"
+			},
+			{
+				"-percentage" : "16.4",
+				"#text" : "Uniting Church Australia"
+			}
+		],
+		"population" : "2209"
+	}, {
+		"country" : "Northern Mariana Islands",
+		"population" : "88662"
+	}, {
+		"country" : "Palau",
+		"population" : "16952"
+	}, {
+		"country" : "Pitcairn Islands",
+		"religions" : {
+			"-percentage" : "100",
+			"#text" : "Seventh-Day Adventist"
+		},
+		"population" : "48"
+	}, {
+		"country" : "Solomon Islands",
+		"religions" : [
+			{
+				"-percentage" : "19",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "5",
+				"#text" : "Protestant"
+			},
+			{
+				"-percentage" : "34",
+				"#text" : "Anglican"
+			},
+			{
+				"-percentage" : "17",
+				"#text" : "Baptist"
+			},
+			{
+				"-percentage" : "10",
+				"#text" : "Seventh-Day Adventist"
+			},
+			{
+				"-percentage" : "11",
+				"#text" : "United"
+			}
+		],
+		"population" : "412902"
+	}, {
+		"country" : "Tonga",
+		"religions" : {
+			"-percentage" : "100",
+			"#text" : "Christian"
+		},
+		"population" : "106466"
+	}, {
+		"country" : "Tuvalu",
+		"religions" : [
+			{
+				"-percentage" : "1",
+				"#text" : "Bahai"
+			},
+			{
+				"-percentage" : "1.4",
+				"#text" : "Seventh-Day Adventist"
+			},
+			{
+				"-percentage" : "97",
+				"#text" : "Church Tuvalu"
+			}
+		],
+		"population" : "10146"
+	}, {
+		"country" : "Vanuatu",
+		"religions" : [
+			{
+				"-percentage" : "15",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "15",
+				"#text" : "Anglican"
+			},
+			{
+				"-percentage" : "6.2",
+				"#text" : "Seventh-Day Adventist"
+			},
+			{
+				"-percentage" : "36.7",
+				"#text" : "Presbyterian"
+			},
+			{
+				"-percentage" : "3.8",
+				"#text" : "Church Christ"
+			}
+		],
+		"population" : "177504"
+	}, {
+		"country" : "Wallis and Futuna",
+		"religions" : {
+			"-percentage" : "99",
+			"#text" : "Roman Catholic"
+		},
+		"population" : "15289"
+	}, {
+		"country" : "Samoa",
+		"religions" : {
+			"-percentage" : "99.7",
+			"#text" : "Christian"
+		},
+		"population" : "214384"
+	}, {
+		"country" : "Argentina",
+		"religions" : [
+			{
+				"-percentage" : "2",
+				"#text" : "Jewish"
+			},
+			{
+				"-percentage" : "90",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "2",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "34672997"
+	}, {
+		"country" : "Bolivia",
+		"religions" : {
+			"-percentage" : "95",
+			"#text" : "Roman Catholic"
+		},
+		"population" : "7165257"
+	}, {
+		"country" : "Brazil",
+		"religions" : {
+			"-percentage" : "70",
+			"#text" : "Roman Catholic"
+		},
+		"population" : "162661214"
+	}, {
+		"country" : "Chile",
+		"religions" : [
+			{
+				"-percentage" : "89",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "11",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "14333258"
+	}, {
+		"country" : "Paraguay",
+		"religions" : {
+			"-percentage" : "90",
+			"#text" : "Roman Catholic"
+		},
+		"population" : "5504146"
+	}, {
+		"country" : "Uruguay",
+		"religions" : [
+			{
+				"-percentage" : "2",
+				"#text" : "Jewish"
+			},
+			{
+				"-percentage" : "66",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "2",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "3238952"
+	}, {
+		"country" : "Peru",
+		"religions" : {
+			"-percentage" : "100",
+			"#text" : "Roman Catholic"
+		},
+		"population" : "24523408"
+	}, {
+		"country" : "French Guiana",
+		"religions" : {
+			"-percentage" : "100",
+			"#text" : "Roman Catholic"
+		},
+		"population" : "151187"
+	}, {
+		"country" : "Guyana",
+		"religions" : [
+			{
+				"-percentage" : "9",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "57",
+				"#text" : "Christian"
+			},
+			{
+				"-percentage" : "33",
+				"#text" : "Hindu"
+			}
+		],
+		"population" : "712091"
+	}, {
+		"country" : "Suriname",
+		"religions" : [
+			{
+				"-percentage" : "19.6",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "22.8",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "25.2",
+				"#text" : "Protestant"
+			},
+			{
+				"-percentage" : "27.4",
+				"#text" : "Hindu"
+			}
+		],
+		"population" : "436418"
+	}, {
+		"country" : "Venezuela",
+		"religions" : [
+			{
+				"-percentage" : "96",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "2",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "21983188"
+	}, {
+		"country" : "Ecuador",
+		"religions" : {
+			"-percentage" : "95",
+			"#text" : "Roman Catholic"
+		},
+		"population" : "11466291"
+	}, {
+		"country" : "Falkland Islands",
+		"population" : "3140"
+	}, {
+		"country" : "Algeria",
+		"religions" : [
+			{
+				"-percentage" : "99",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "0.5",
+				"#text" : "Christian"
+			},
+			{
+				"-percentage" : "0.5",
+				"#text" : "Jewish"
+			}
+		],
+		"population" : "29183032"
+	}, {
+		"country" : "Libya",
+		"religions" : {
+			"-percentage" : "97",
+			"#text" : "Muslim"
+		},
+		"population" : "5445436"
+	}, {
+		"country" : "Mali",
+		"religions" : [
+			{
+				"-percentage" : "90",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "1",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "9653261"
+	}, {
+		"country" : "Mauritania",
+		"religions" : {
+			"-percentage" : "100",
+			"#text" : "Muslim"
+		},
+		"population" : "2336048"
+	}, {
+		"country" : "Morocco",
+		"religions" : [
+			{
+				"-percentage" : "98.7",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "0.2",
+				"#text" : "Jewish"
+			},
+			{
+				"-percentage" : "1.1",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "29779156"
+	}, {
+		"country" : "Niger",
+		"religions" : {
+			"-percentage" : "80",
+			"#text" : "Muslim"
+		},
+		"population" : "9113001"
+	}, {
+		"country" : "Tunisia",
+		"religions" : [
+			{
+				"-percentage" : "98",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "1",
+				"#text" : "Jewish"
+			},
+			{
+				"-percentage" : "1",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "9019687"
+	}, {
+		"country" : "Western Sahara",
+		"religions" : {
+			"-percentage" : "100",
+			"#text" : "Muslim"
+		},
+		"population" : "222631"
+	}, {
+		"country" : "Angola",
+		"religions" : [
+			{
+				"-percentage" : "38",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "15",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "10342899"
+	}, {
+		"country" : "Congo",
+		"religions" : [
+			{
+				"-percentage" : "2",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "50",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "2527841"
+	}, {
+		"country" : "Namibia",
+		"religions" : {
+			"-percentage" : "50",
+			"#text" : "Protestant"
+		},
+		"population" : "1677243"
+	}, {
+		"country" : "Zaire",
+		"religions" : [
+			{
+				"-percentage" : "10",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "50",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "20",
+				"#text" : "Protestant"
+			},
+			{
+				"-percentage" : "10",
+				"#text" : "Kimbanguist"
+			}
+		],
+		"population" : "46498539"
+	}, {
+		"country" : "Zambia",
+		"religions" : [
+			{
+				"-percentage" : "60",
+				"#text" : "Christian"
+			},
+			{
+				"-percentage" : "1",
+				"#text" : "Muslim"
+			}
+		],
+		"population" : "9159072"
+	}, {
+		"country" : "Benin",
+		"religions" : [
+			{
+				"-percentage" : "15",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "15",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "5709529"
+	}, {
+		"country" : "Burkina Faso",
+		"religions" : [
+			{
+				"-percentage" : "50",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "10",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "10623323"
+	}, {
+		"country" : "Nigeria",
+		"religions" : [
+			{
+				"-percentage" : "50",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "40",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "103912489"
+	}, {
+		"country" : "Togo",
+		"religions" : [
+			{
+				"-percentage" : "10",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "20",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "4570530"
+	}, {
+		"country" : "Botswana",
+		"religions" : {
+			"-percentage" : "50",
+			"#text" : "Christian"
+		},
+		"population" : "1477630"
+	}, {
+		"country" : "South Africa",
+		"religions" : {
+			"-percentage" : "2",
+			"#text" : "Muslim"
+		},
+		"population" : "41743459"
+	}, {
+		"country" : "Zimbabwe",
+		"religions" : [
+			{
+				"-percentage" : "1",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "25",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "11271314"
+	}, {
+		"country" : "Cote dIvoire",
+		"religions" : [
+			{
+				"-percentage" : "60",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "12",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "14762445"
+	}, {
+		"country" : "Ghana",
+		"religions" : [
+			{
+				"-percentage" : "30",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "24",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "17698271"
+	}, {
+		"country" : "Burundi",
+		"religions" : [
+			{
+				"-percentage" : "1",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "67",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "5943057"
+	}, {
+		"country" : "Rwanda",
+		"religions" : [
+			{
+				"-percentage" : "1",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "65",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "9",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "6853359"
+	}, {
+		"country" : "Tanzania",
+		"population" : "29058470"
+	}, {
+		"country" : "Cameroon",
+		"religions" : [
+			{
+				"-percentage" : "16",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "33",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "14261557"
+	}, {
+		"country" : "Central African Republic",
+		"religions" : [
+			{
+				"-percentage" : "15",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "25",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "25",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "3274426"
+	}, {
+		"country" : "Chad",
+		"religions" : [
+			{
+				"-percentage" : "50",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "25",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "6976845"
+	}, {
+		"country" : "Equatorial Guinea",
+		"religions" : {
+			"-percentage" : "100",
+			"#text" : "Roman Catholic"
+		},
+		"population" : "431282"
+	}, {
+		"country" : "Gabon",
+		"religions" : [
+			{
+				"-percentage" : "1",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "55",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "1172798"
+	}, {
+		"country" : "Cape Verde",
+		"religions" : {
+			"-percentage" : "100",
+			"#text" : "Roman Catholic"
+		},
+		"population" : "449066"
+	}, {
+		"country" : "Sudan",
+		"religions" : [
+			{
+				"-percentage" : "70",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "5",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "31547543"
+	}, {
+		"country" : "Comoros",
+		"religions" : [
+			{
+				"-percentage" : "14",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "86",
+				"#text" : "Muslim"
+			}
+		],
+		"population" : "569237"
+	}, {
+		"country" : "Guinea",
+		"religions" : [
+			{
+				"-percentage" : "85",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "8",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "7411981"
+	}, {
+		"country" : "Liberia",
+		"religions" : [
+			{
+				"-percentage" : "20",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "10",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "2109789"
+	}, {
+		"country" : "Djibouti",
+		"religions" : [
+			{
+				"-percentage" : "94",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "6",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "427642"
+	}, {
+		"country" : "Eritrea",
+		"population" : "3427883"
+	}, {
+		"country" : "Ethiopia",
+		"religions" : [
+			{
+				"-percentage" : "45",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "35",
+				"#text" : "Christian Orthodox"
+			}
+		],
+		"population" : "57171662"
+	}, {
+		"country" : "Somalia",
+		"religions" : {
+			"-percentage" : "100",
+			"#text" : "Muslim"
+		},
+		"population" : "9639151"
+	}, {
+		"country" : "Kenya",
+		"religions" : [
+			{
+				"-percentage" : "28",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "38",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "28176686"
+	}, {
+		"country" : "Gambia",
+		"religions" : [
+			{
+				"-percentage" : "90",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "9",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "1204984"
+	}, {
+		"country" : "Senegal",
+		"religions" : [
+			{
+				"-percentage" : "92",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "2",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "9092749"
+	}, {
+		"country" : "Guinea-Bissau",
+		"religions" : [
+			{
+				"-percentage" : "30",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "5",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "1151330"
+	}, {
+		"country" : "Sierra Leone",
+		"religions" : [
+			{
+				"-percentage" : "60",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "10",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "4793121"
+	}, {
+		"country" : "Uganda",
+		"religions" : [
+			{
+				"-percentage" : "16",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "33",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "33",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "20158176"
+	}, {
+		"country" : "Lesotho",
+		"religions" : {
+			"-percentage" : "80",
+			"#text" : "Christian"
+		},
+		"population" : "1970781"
+	}, {
+		"country" : "Madagascar",
+		"religions" : [
+			{
+				"-percentage" : "7",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "41",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "13670507"
+	}, {
+		"country" : "Malawi",
+		"religions" : [
+			{
+				"-percentage" : "20",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "20",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "55",
+				"#text" : "Protestant"
+			}
+		],
+		"population" : "9452844"
+	}, {
+		"country" : "Mozambique",
+		"religions" : [
+			{
+				"-percentage" : "20",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "30",
+				"#text" : "Christian"
+			}
+		],
+		"population" : "17877927"
+	}, {
+		"country" : "Mauritius",
+		"religions" : [
+			{
+				"-percentage" : "16.6",
+				"#text" : "Muslim"
+			},
+			{
+				"-percentage" : "28.3",
+				"#text" : "Christian"
+			},
+			{
+				"-percentage" : "52",
+				"#text" : "Hindu"
+			}
+		],
+		"population" : "1140256"
+	}, {
+		"country" : "Mayotte",
+		"religions" : {
+			"-percentage" : "97",
+			"#text" : "Muslim"
+		},
+		"population" : "223765"
+	}, {
+		"country" : "Swaziland",
+		"religions" : {
+			"-percentage" : "60",
+			"#text" : "Christian"
+		},
+		"population" : "998730"
+	}, {
+		"country" : "Reunion",
+		"religions" : {
+			"-percentage" : "94",
+			"#text" : "Roman Catholic"
+		},
+		"population" : "679198"
+	}, {
+		"country" : "Saint Helena",
+		"population" : "7637"
+	}, {
+		"country" : "Sao Tome and Principe",
+		"population" : "144128"
+	}, {
+		"country" : "Seychelles",
+		"religions" : [
+			{
+				"-percentage" : "90",
+				"#text" : "Roman Catholic"
+			},
+			{
+				"-percentage" : "8",
+				"#text" : "Anglican"
+			}
+		],
+		"population" : "77575"
+	} ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "224.3831ms",
+		"executionTime": "224.0692ms",
+		"resultCount": 238,
+		"resultSize": 46679,
+		"processedObjects": 1
+	}
+}

@@ -1,0 +1,169 @@
+{
+	"requestID": "428e6c82-868b-4e84-bf22-73a9a99b5eb6",
+	"results": [ {
+		"cities" : [ ],
+		"province_name" : "Baranya"
+	}, {
+		"cities" : [
+			{
+				"name" : "Kecskemet"
+			}
+		],
+		"province_name" : "Bacs Kiskun"
+	}, {
+		"cities" : [
+			{
+				"name" : "Bekescaba"
+			}
+		],
+		"province_name" : "Bekes"
+	}, {
+		"cities" : [ ],
+		"province_name" : "Borsod Abauj Zemplen"
+	}, {
+		"cities" : [
+			{
+				"name" : "Hodmezovasarhely"
+			}
+		],
+		"province_name" : "Csongrad"
+	}, {
+		"cities" : [
+			{
+				"name" : "Szekesfehervar"
+			}
+		],
+		"province_name" : "Fejer"
+	}, {
+		"cities" : [ ],
+		"province_name" : "Gyor Sopron"
+	}, {
+		"cities" : [ ],
+		"province_name" : "Hajdu Bihar"
+	}, {
+		"cities" : [
+			{
+				"name" : "Eger"
+			}
+		],
+		"province_name" : "Heves"
+	}, {
+		"cities" : [
+			{
+				"name" : "Tatabanya"
+			}
+		],
+		"province_name" : "Komarom Esztergom"
+	}, {
+		"cities" : [
+			{
+				"name" : "Salgotarjan"
+			}
+		],
+		"province_name" : "Nograd"
+	}, {
+		"cities" : [ ],
+		"province_name" : "Pest"
+	}, {
+		"cities" : [
+			{
+				"name" : "Kaposvar"
+			}
+		],
+		"province_name" : "Somogy"
+	}, {
+		"cities" : [
+			{
+				"name" : "Nyiregyhaza"
+			}
+		],
+		"province_name" : "Szabolcs Szatmar"
+	}, {
+		"cities" : [
+			{
+				"name" : "Szolnok"
+			}
+		],
+		"province_name" : "Szolnok"
+	}, {
+		"cities" : [
+			{
+				"name" : "Szekszard"
+			}
+		],
+		"province_name" : "Tolna"
+	}, {
+		"cities" : [
+			{
+				"name" : "Szombathely"
+			}
+		],
+		"province_name" : "Vas"
+	}, {
+		"cities" : [
+			{
+				"name" : "Veszprem"
+			}
+		],
+		"province_name" : "Veszprem"
+	}, {
+		"cities" : [
+			{
+				"name" : "Zalaegerszeg"
+			}
+		],
+		"province_name" : "Zala"
+	}, {
+		"cities" : [
+			{
+				"name" : "Budapest"
+			}
+		],
+		"province_name" : "Budapest (munic.)"
+	}, {
+		"cities" : [
+			{
+				"name" : "Debrecen"
+			}
+		],
+		"province_name" : "Debrecen (munic.)"
+	}, {
+		"cities" : [
+			{
+				"name" : "Gyor"
+			}
+		],
+		"province_name" : "Gyor (munic.)"
+	}, {
+		"cities" : [
+			{
+				"name" : "Miskolc"
+			}
+		],
+		"province_name" : "Miskolc (munic.)"
+	}, {
+		"cities" : [
+			{
+				"name" : "Pecs"
+			}
+		],
+		"province_name" : "Pecs (munic.)"
+	}, {
+		"cities" : [
+			{
+				"name" : "Szeged"
+			}
+		],
+		"province_name" : "Szeged (munic.)"
+	} ]
+	,
+	"plans":{},
+	"status": "success",
+	"metrics": {
+		"elapsedTime": "165.5179ms",
+		"executionTime": "164.9229ms",
+		"resultCount": 25,
+		"resultSize": 2110,
+		"processedObjects": 1
+	}
+}
