@@ -150,14 +150,15 @@ def main(argv):
     # r.repartition(1).write.mode("overwrite").format("csv").save(outputfile + "_warmup.txt")
 
     # rA done
-    # rA = QA(spark, dataFile)
+    rA = QA(spark, dataFile)
     # rA.repartition(1).write.mode("overwrite").format("text").save(outputfile + "QA")
 
     # rB done
     rB = QB(spark, dataFile)
-    rB.repartition(1).write.mode("overwrite").format("csv").save(outputfile + "QB")
+    # rB.repartition(1).write.mode("overwrite").format("csv").save(outputfile + "QB")
 
-    # rC = QC(spark, dataFile)
+    # rc done
+    rC = QC(spark, dataFile)
     # rC.repartition(1).write.mode("overwrite").format("csv").save(outputfile + "QC")
 
 
@@ -200,13 +201,13 @@ def QA(spark, dataFile):
     # TODO: your code here
     d.createOrReplaceTempView("flights")
     
-    for row in d.rdd.collect():
-        # print(row["origincityname"])
-        print(type(row))
-        list_row = list(row.asDict())
-        for i, name in enumerate(list_row):
-            print(f'{i}, {name}')
-        break
+    # for row in d.rdd.collect():
+    #     # print(row["origincityname"])
+    #     print(type(row))
+    #     list_row = list(row.asDict())
+    #     for i, name in enumerate(list_row):
+    #         print(f'{i}, {name}')
+    #     break
     
     r1 = spark.sql("SELECT DISTINCT F.destcityname FROM flights as F WHERE F.origincityname='Seattle, WA'")
     
@@ -215,21 +216,10 @@ def QA(spark, dataFile):
                     .map(lambda r: r['destcityname'])\
                     .distinct()\
                     .collect()
-    print(rdd_res)
-    print(len(rdd_res))
-    
-    
+    # print(rdd_res)
+    # print(len(rdd_res))
     return r1
 
-# test function
-# def helpQA(x):
-#     fields = ["destcityname"]
-#     d = []
-#     for k in x:
-#         print(k)
-#         if k in fields:
-#             d.append(x[k])
-#     return tuple(d)
 
 
 # Find the number of non-cancelled (!= 1) flights per month-origin city pair,
@@ -252,9 +242,10 @@ def QB(spark, dataFile):
     rdd_res = d.rdd.filter(lambda r: r["cancelled"]!= 1)\
                 .groupBy(lambda x: (x["origincityname"],x["month"])) \
                 .map(lambda x: (x[0], len(x[1])))\
+                .map(lambda x: (x[0][0],x[0][1], x[1])) \
                 .collect()
-    print(rdd_res) 
-    return r1
+    # print(rdd_res) 
+    return rdd_res
 
 
 # Compute the average delay from all departing flights for each city. Flights
@@ -269,8 +260,26 @@ def QC(spark, dataFile):
     d = spark.read.parquet(dataFile)
 
     # TODO: your code here
-    return
+    d.createOrReplaceTempView('flights')
+    # r1 = spark.sql("SELECT F.origincityname FROM flights as F")
+    rdd_res = d.rdd.filter(lambda r: r["cancelled"]!= 1 and r["depdelay"] != None) \
+                    .map(lambda r: (r["origincityname"],r["depdelay"])) \
+                    .groupBy(lambda r: r[0]) \
+                    .map(helperQC)\
+                    .collect()
+                    
+    # print(rdd_res)
+    return rdd_res
 
+def helperQC(x):
+    tmp = list(x[1])
+    n = len(tmp)
+    res = 0.0
+    for e in tmp:
+        res += e[1]
+    return (x[0], res/n)
+
+# .map(lambda r: (r[0],sum(list(r[1][2]))/float(len(list(r[1])))))\
 
 if __name__ == "__main__":
     main(sys.argv[1:])
